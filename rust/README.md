@@ -55,11 +55,11 @@ Additional [`cargo build`](https://doc.rust-lang.org/cargo/commands/cargo-build.
 npm run build -- --feature=beetle
 ```
 
-#### Macbook M1
+### `npm run build-m1`
 
 To build to run on Macbook M1 silicon, use the following command line:
 ```
-npm run build -- --target=aarch64-apple-darwin
+npm run build-m1
 ```
 
 #### `npm build-debug`
