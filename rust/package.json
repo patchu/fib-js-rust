@@ -1,0 +1,19 @@
+{
+  "name": "fib-proj",
+  "version": "0.1.0",
+  "description": "Fib module written in Rust",
+  "main": "index.node",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "npm run build --",
+    "build-release": "npm run build -- --release",
+    "build-m1": "npm run build -- --target=aarch64-apple-darwin",
+    "install": "npm run build-release",
+    "test": "cargo test"
+  },
+  "author": "Patrick Chu",
+  "license": "ISC",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1"
+  }
+}
